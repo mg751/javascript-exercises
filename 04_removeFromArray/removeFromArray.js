@@ -1,14 +1,14 @@
-let removeFromArray = function(inputArray,inputElement){
+let removeFromArray = function(){ 
+    let args = Array.from(arguments);
+    let array = args[0]; // define input array from arguments
+    let newArray = [];
 
-
-
-    
-    let equalityTest = function checkEquality(inputArray){
-        return (inputElement !== inputArray)
-    }
-
-    newArray = inputArray.filter(equalityTest);
-        return(newArray);
+    array.forEach((element) => {
+        if (!args.includes(element)){
+            newArray.push(element);
+        }
+    });
+    return newArray;
 }
 
 
