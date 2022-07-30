@@ -1,15 +1,24 @@
 const sumAll = function(a,b){
+
+    if (Math.sign(a) !== 1 || Math.sign(b) !== 1){
+        return "ERROR";
+    } else {
+
     let array = [];
-    for (let i = a; i <= b; i++){
-        array.push(i);
+    let start = Math.min(a,b);
+    let finish = Math.max(a,b);
+    for (let i = start; i <= finish; i++){
+         array.push(i);
     }
  
-    let finalSum = 0;
-    for (let i = 0; i <= array.length-1; i++) {
+    let finalSum = start;
+    for (let i = start; i <= array.length-1; i++) {
         finalSum += array[i];
     }
     return finalSum;
 }
+}
+
 
 
 
