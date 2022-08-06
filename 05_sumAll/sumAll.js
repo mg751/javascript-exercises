@@ -2,6 +2,8 @@ const sumAll = function(a,b){
 
     if (Math.sign(a) !== 1 || Math.sign(b) !== 1){
         return "ERROR";
+    } else if (typeof(a) === 'string' || typeof(b) === 'string') {
+        return "ERROR";
     } else {
 
     let array = [];
