@@ -1,3 +1,6 @@
+
+// the whole array part here can be removed
+
 const sumAll = function(a,b){
 
     if (Math.sign(a) !== 1 || Math.sign(b) !== 1){
